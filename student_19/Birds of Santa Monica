@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+.Keemstar {
+	color: red;
+	border-style: double;
+	border-color: #97FF00;
+	background-color: #00F7FF;
+	font-size: 30px;
+}
+	
+</style>
+	
+<div class="Keemstar">
+	
+		<h1> Birds of Santa Monica </h1>
+
+<div class="Keemstar">
+	
+<ol>
+	<li> <h3> Rock Dove </h3>  </li>
+
+<p>The Rock Dove can be seen in other colors, such as white, brown, and mixed. The Rock dove typically ranges from 29-37 cm in length and 62-72 cm wingspan. The wight of the Rock dove ranges between 8.4-13.5 oz.</p>
+
+		<img src= "https://upload.wikimedia.org/wikipedia/commons/4/4d/Rock_Pigeon_Columba_livia.jpg">
+
+
+
+	<li>  </li>
+	<li>  </li>
+</ol>
+
+	<head>
+
+		<title>My First Website</title>
+
+	</head>
+
+	<body>
+
+
+		
+
+
+	</body>
+
+</html>
