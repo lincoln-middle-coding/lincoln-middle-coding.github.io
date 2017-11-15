@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <style>
+    h1:hover {
+      color: red;
+      font-style: bold;
+    
+    }
+  
+  </style>
+  <title> Jetlikesferraris </title>
+  </head>
+  <src img= "http://auto.ferrari.com/en_US/wp-content/uploads/sites/7/2016/09/ferrari-laferrari-aperta-2016-gallery-prew-1-tr.jpg">
+  <h1> I like Ferraris </h1>
+    <h2> I likw Naruto </h2>
+    <h2>Choose your Destiny!!!<br><br><br></h2><div id="text"><br></div>
+<div ng-app>
+  <div>
+    <form id="inp" onsubmit="Start()">
+      <label>Choose your class!<br> Archer   Knight   Wizard<br></label>
+    <input type="text" ng-model="playerClass" placeholder="Enter your class here"><br>
+        <br><label>Choose your race!<br>Human Elf Dwarf</label>
+        <br><input type="text" id="inp" ng-model="playerRace" placeholder="Enter your race here"><br>
+        
+       <br><input type="number" ng-model="playerSTR" placeholder="How Strong are you?">
+       <br><input type="number" ng-model="playerCON" placeholder="Constitutional?">
+       <br><input type="number" ng-model="playerINT" placeholder="Intelegent?">
+       <br><input type="number" ng-model="playerWIS" placeholder="Wise?">
+       <br><input type="number" ng-model="playerDEX" placeholder="Dexterous?">
+       <br><input type="number" ng-model="playerCHA" placeholder="Charismatic?">
+           <p>Enter these, no lower than 1, and your total can be no more than 40. Your total: {{playerSTR+playerCON+playerINT+playerWIS+playerDEX+playerCHA}}</p>
+           <p>You are a(n) {{playerRace}} {{playerClass}}!</p>
+           <button type="submit" class="start" title="Start playing?" onclick="dis()" >Ready to Play?</button>
+    <hr
+        </form>
+  </div>
+</div>
+           
+        <!-- USE THIS: document.getElementById("text").innerHTML = ""
+     AND THIS: alert("You lost! Don't be afraid to be adventurous!") -->
+  
+  </html>
 
