@@ -107,3 +107,297 @@ google.dom.append(a)}}function e(){if(document.f&&document.f.btnI)document.f.btn
  var b,d,e,f;function g(a,c){if(a.removeEventListener){a.removeEventListener("load",c,false);a.removeEventListener("error",c,false)}else{a.detachEvent("onload",c);a.detachEvent("onerror",c)}}function h(a){f=(new Date).getTime();++d;a=a||window.event;var c=a.target||a.srcElement;g(c,h)}var i=document.getElementsByTagName("img");b=i.length;d=0;for(var j=0,k;j<b;++j){k=i[j];if(k.complete||typeof k.src!="string"||!k.src)++d;else if(k.addEventListener){k.addEventListener("load",h,false);k.addEventListener("error",
  h,false)}else{k.attachEvent("onload",h);k.attachEvent("onerror",h)}}e=b-d;function l(){google.timers.load.t.ol=(new Date).getTime();google.timers.load.t.iml=f;google.kCSI.imc=d;google.kCSI.imn=b;google.kCSI.imp=e;google.report&&google.report(google.timers.load,google.kCSI)}if(window.addEventListener)window.addEventListener("load",l,false);else if(window.attachEvent)window.attachEvent("onload",l);google.timers.load.t.prt=(f=(new Date).getTime());
  })();
+	 
+	
+	 $(document).ready(function() {
+    var sounds = new SoundManager();//**
+    var level = new Level('world');//world is the id of the corresponding DOM container
+    level.setSounds(sounds);//*
+    level.load(definedLevels[0]);
+    level.start();
+    keys.bind();
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Super Mario HTML5</title>
+<link href="Content/style.css" rel="stylesheet" />
+</head>
+<body>
+<div id="game">
+<div id="world">
+</div>
+<div id="coinNumber" class="gauge">0</div>
+<div id="coin" class="gaugeSprite"></div>
+<div id="liveNumber" class="gauge">0</div>
+<div id="live" class="gaugeSprite"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="Scripts/testlevels.js"></script>
+<script src="Scripts/oop.js"></script>
+<script src="Scripts/keys.js"></script>
+<script src="Scripts/sounds.js"></script>
+<script src="Scripts/constants.js"></script>
+<script src="Scripts/main.js"></script>
+</body>
+</html>
+@font-face {
+   font-family: 'SMB';
+   src: local('Super Mario Bros.'),
+        url('fonts/Super Mario Bros.ttf') format('truetype');
+   font-style: normal;
+}
+
+#game {
+	height: 480px; width: 640px; position: absolute; left: 50%; top: 50%;
+	margin-left: -321px; margin-top: -241px; border: 1px solid #ccc; overflow: hidden;
+}
+#world { 
+	margin: 0; padding: 0; height: 100%; width: 100%; position: absolute;
+	bottom: 0; left: 0; z-index: 0;
+}
+.gauge {
+	margin: 0; padding: 0; height: 50px; width: 70px; text-align: right; font-size: 2em;
+	font-weight: bold; position: absolute; top: 17px; right: 52px; z-index: 1000;
+	position: absolute; font-family: 'SMB';
+}
+.gaugeSprite {
+	margin: 0; padding: 0; z-index: 1000; position: absolute;
+}
+#coinNumber {
+	left: 0;
+}
+#liveNumber {
+	right: 52px;
+}
+#coin {
+	height: 32px; width: 32px; background-image : url(mario-objects.png);
+	background-position: 0 0; top: 15px; left: 70px;
+}
+#live {
+	height: 40px; width: 40px; background-image : url(mario-sprites.png);
+	background-position : 0 -430px; top: 12px; right: 8px;
+}
+.figure {
+	margin: 0; padding: 0; z-index: 99; position: absolute;
+}
+.matter {
+	margin: 0; padding: 0; z-index: 95; position: absolute; width: 32px; height: 32px;
+}var reflection = {};
+
+(function(){
+    var initializing = false, fnTest = /xyz/.test(function(){xyz;}) ? /\b_super\b/ : /.*/;
+
+    // The base Class implementation (does nothing)
+    this.Class = function(){ };
+   
+    // Create a new Class that inherits from this class
+    Class.extend = function(prop, ref_name) {
+        if(ref_name)
+            reflection[ref_name] = Class;
+            
+        var _super = this.prototype;
+
+        // Instantiate a base class (but only create the instance,
+        // don't run the init constructor)
+        initializing = true;
+        var prototype = new this();
+        initializing = false;
+         
+        // Copy the properties over onto the new prototype
+        for (var name in prop) {
+        // Check if we're overwriting an existing function
+        prototype[name] = typeof prop[name] == "function" && 
+            typeof _super[name] == "function" && fnTest.test(prop[name]) ?
+            (function(name, fn) {
+                return function() {
+                    var tmp = this._super;
+
+                    // Add a new ._super() method that is the same method
+                    // but on the super-class
+                    this._super = _super[name];
+
+                    // The method only need to be bound temporarily, so we
+                    // remove it when we're done executing
+                    var ret = fn.apply(this, arguments);        
+                    this._super = tmp;
+
+                    return ret;
+                };
+            })(name, prop[name]) :
+            prop[name];
+        }
+         
+        // The dummy class constructor
+        function Class() {
+            // All construction is actually done in the init method
+            if ( !initializing && this.init )
+                this.init.apply(this, arguments);
+        }
+         
+        // Populate our constructed prototype object
+        Class.prototype = prototype;
+         
+        // Enforce the constructor to be what we expect
+        Class.prototype.constructor = Class;
+
+        // And make this class extendable
+        Class.extend = arguments.callee;
+         
+        return Class;
+    };
+})();var TopGrass = Ground.extend({
+    init: function(x, y, level) {
+        var blocking = ground_blocking.top;
+        this._super(x, y, blocking, level);
+        this.setImage(images.objects, 888, 404);
+    },
+}, 'grass_top');var Matter = Base.extend({
+    init: function(x, y, blocking, level) {
+        this.blocking = blocking;
+        this.view = $(DIV).addClass(CLS_MATTER).appendTo(level.world);
+        this.level = level;
+        this._super(x, y);
+        this.setSize(32, 32);
+        this.addToGrid(level);
+    },
+    addToGrid: function(level) {
+        level.obstacles[this.x / 32][this.level.getGridHeight() - 1 - this.y / 32] = this;
+    },
+    setImage: function(img, x, y) {
+        this.view.css({
+            backgroundImage : img ? c2u(img) : 'none',
+            backgroundPosition : '-' + (x || 0) + 'px -' + (y || 0) + 'px',
+        });
+        this._super(img, x, y);
+    },
+    setPosition: function(x, y) {
+        this.view.css({
+            left: x,
+            bottom: y
+        });
+        this._super(x, y);
+    },
+});var keys = {
+    //Method to activate binding
+    bind : function() {
+        $(document).on('keydown', function(event) {    
+            return keys.handler(event, true);
+        });
+        $(document).on('keyup', function(event) {    
+            return keys.handler(event, false);
+        });
+    },
+    //Method to reset the current key states
+    reset : function() {
+        keys.left = false;
+        keys.right = false;
+        keys.accelerate = false;
+        keys.up = false;
+        keys.down = false;
+    },
+    //Method to delete the binding
+    unbind : function() {
+        $(document).off('keydown');
+        $(document).off('keyup');
+    },
+    //Actual handler - is called indirectly with some status
+    handler : function(event, status) {
+        switch(event.keyCode) {
+            case 57392://CTRL on MAC
+            case 17://CTRL
+            case 65://A
+                keys.accelerate = status;
+                break;
+            case 40://DOWN ARROW
+                keys.down = status;
+                break;
+            case 39://RIGHT ARROW
+                keys.right = status;
+                break;
+            case 37://LEFT ARROW
+                keys.left = status;            
+                break;
+            case 38://UP ARROW
+                keys.up = status;
+                break;
+            default:
+                return true;
+        }
+            
+        event.preventDefault();
+        return false;
+    },
+    //Here we have our interesting keys
+    accelerate : false,
+    left : false,
+    up : false,
+    right : false,
+    down : false,
+};var Base = Class.extend({
+    init: function(x, y) {
+        this.setPosition(x || 0, y || 0);
+        this.clearFrames();
+    },
+    /* more basic methods like setPosition(), ... */
+    setupFrames: function(fps, frames, rewind, id) {
+        if(id) {
+            if(this.frameID === id)
+                return true;
+            
+            this.frameID = id;
+        }
+        
+        this.frameCount = 0;
+        this.currentFrame = 0;
+        this.frameTick = frames ? (1000 / fps / constants.interval) : 0;
+        this.frames = frames;
+        this.rewindFrames = rewind;
+        return false;
+    },
+    clearFrames: function() {
+        this.frameID = undefined;
+        this.frames = 0;
+        this.currentFrame = 0;
+        this.frameTick = 0;
+    },
+    playFrame: function() {
+        if(this.frameTick && this.view) {
+            this.frameCount++;
+            
+            if(this.frameCount >= this.frameTick) {            
+                this.frameCount = 0;
+                
+                if(this.currentFrame === this.frames)
+                    this.currentFrame = 0;
+                    
+                var $el = this.view;
+                $el.css('background-position', '-' + (this.image.x + this.width * 
+                  ((this.rewindFrames ? this.frames - 1 : 0) - this.currentFrame)) + 
+                  'px -' + this.image.y + 'px');
+                this.currentFrame++;
+            }
+        }
+    },
+});var Item = Matter.extend({
+    /* Constructor and methods */
+    bounce: function() {
+        this.isBouncing = true;
+        
+        for(var i = this.level.figures.length; i--; ) {
+            var fig = this.level.figures[i];
+            
+            if(fig.y === this.y + 32 && fig.x >= this.x - 16 && fig.x <= this.x + 16) {
+                if(fig instanceof ItemFigure)
+                    fig.setVelocity(fig.vx, constants.bounce);
+                else if(fig instanceof Enemy)
+                    fig.die();
+            }
+        }
+    },
+})var LeftBush = Decoration.extend({
+    init: function(x, y, level) {
+        this._super(x, y, level);
+        this.setImage(images.objects, 178, 928);
+    },
+}, 'bush_left');
