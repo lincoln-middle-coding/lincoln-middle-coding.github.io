@@ -15,7 +15,15 @@
 	background-color: #00F7FF;
 	font-size: 30px;
 	text-align: center
-
+	ol:hover {
+        }
+	body {
+            color: purple;
+           }
+           
+           ol:hover {
+           color: red;
+           
 
 }
  *{
@@ -68,7 +76,7 @@
      <ul>
       <li><a>Free give-aways</a></li>
       <!--   <li><a>Popular</a></li>   -->
-       <li><a href="jackpots.html">Popular</a></li>   
+       <li><a href="boi.html">Popular</a></li>   
       <li><a>My give-aways</a></li>
      </ul>
    </li>
@@ -86,7 +94,8 @@
 	</head>
 
 	<body>
-
+		
+	   
 <div>
 	
 </div>
