@@ -14,7 +14,7 @@
 	border-color: #97FF00;
 	background-color: #00F7FF;
 	font-size: 30px;
-	text-align: center
+	text-align: center;
 	ol:hover {
         }
 	body {
