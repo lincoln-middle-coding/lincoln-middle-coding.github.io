@@ -88,6 +88,16 @@
 			    document.getElementById(cityName).style.display = "block";
 			    evt.currentTarget.className += " active";
 			}	
+			input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
 	  	</script>
 </head>
 
@@ -116,12 +126,7 @@
 	
 	
 	
-		<div class="wrap">
-   		<div class="search">
-      		<input type="text" class="searchTerm" placeholder="What are you looking for ?">
-     	 	<button type="submit" class="searchButton">
-        	<i class="fa fa-search"></i>
-     		</button>
+		<input type="text" name="search" placeholder="Search..">
    		</div>
 		</div>
 		<h6> (Use the search bar to find any location of facts about me on this page quickly.) <h6>
