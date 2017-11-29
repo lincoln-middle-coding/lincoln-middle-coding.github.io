@@ -66,6 +66,16 @@
 			    border: 1px solid #ccc;
 			    border-top: none;
 			}
+			input[type=text] {
+			    width: 130px;
+			    -webkit-transition: width 0.4s ease-in-out;
+			    transition: width 0.4s ease-in-out;
+			}
+
+			/* When the input field gets focus, change its width to 100% */
+			input[type=text]:focus {
+			    width: 100%;
+			}
 		</style>
 	  	<script>
 			function openCity(evt, cityName) {
@@ -90,16 +100,7 @@
 			}	
 			
 	  	</script>
-				input[type=text] {
-			    width: 130px;
-			    -webkit-transition: width 0.4s ease-in-out;
-			    transition: width 0.4s ease-in-out;
-			}
-
-			/* When the input field gets focus, change its width to 100% */
-			input[type=text]:focus {
-			    width: 100%;
-			}
+				
 	</head>
 
 </html>
