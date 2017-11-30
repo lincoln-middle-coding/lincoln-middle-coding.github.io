@@ -26,68 +26,7 @@
            
 
 }
- *{
-    margin:0px;
-    padding:0px;
-   }
-   #container ul
-   {
-    list-style:none;
-   }
-   #container ul li
-   {
-    background-color:#3C3E94;
-    width:150px;
-    border:1px solid white;
-    height:50px;
-    line-height:50px;
-    text-align:center;
-    float:left;
-    color:white;
-    font-size:25px;
-    position:relative;
-   }
-   #container ul li:hover
-   {
-    background-color:red;
-   }
-   #container ul ul 
-   {
-    display:none;
-   }
-   #container ul li:hover > ul 
-   {
-    display:block;
-   }
-   #container ul ul ul
-   {
-    margin-left:150px;
-    top:0px;
-    position:absolute;
-   }
-   </style>
- </head>
- <body>
-   <div id="container">
-  <ul> 
-   <li><a href="index.html">Homepage</a></li>
-   <li><a href="jackpots.html">Aquatic Birds</a></li>
-   <li> Birds of Prey
-     <ul>
-      <li><a>Free give-aways</a></li>
-      <!--   <li><a>Popular</a></li>   -->
-       <li><a href="boi.html">Popular</a></li>   
-      <li><a>My give-aways</a></li>
-     </ul>
-   </li>
-   <li><a href="jackpots.html">Donate</a></li>
-    <ul>
-     <li><a>Donate</a></li>
-    </ul>
-   </li>
-  </ul>
-   </div>
-	
+
 </style>
 
 
