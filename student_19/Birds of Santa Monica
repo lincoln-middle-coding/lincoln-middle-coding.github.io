@@ -10,10 +10,11 @@
 <style>
 .Keemstar {
 	color: red;
-	border-style: double;
-	border-color: #97FF00;
+	border-style: solid;
+	border-color: blue;
+	border-width: 10px;
 	background-color: #00F7FF;
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 	ol:hover {
         }
@@ -26,33 +27,26 @@
            
 
 }
-
+ 	
 </style>
 
 
 	</head>
 
 	<body>
-		
-	   
-<div>
 	
-</div>
-		
-
-
-	</body>
-
-	
-<div class="Keemstar">
+<div class="Keemstar"
 	
 		<h1> Birds of Santa Monica </h1>
 
-<div class="Keemstar">
+<div class="Keemstar"
+
 
 <p>This is a list of birds with a brief summary of where to find them and also how they look. All these bursa who are seen who are listed can be seen regularly and or always in the Santa Monica area.
 
 		<h2> Inland/ Resedential </h2>
+
+</body>
 
 
 	
