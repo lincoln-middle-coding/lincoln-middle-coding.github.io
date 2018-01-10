@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title> Melodie's second Website </title> 
+		<style type = "text/css">
+			p {
+				background-color: yellow;
+			}
+			
+			body {
+				background-color: pink;
+			}
+			
+			marquee {
+			
+				background: white;
+				transition: height 2s;
+				border-style: dashed;
+				border-color: red;
+				font-family: Georgia, Verdana;
+				font-style: italic;
+			}
+
+			.pizza {
+				color:red;
+				border-style: dash;
+				border-color: red;
+			}
+			
+			img.resize {
+			  width:200px;
+			  height:40px;
+			}
+			/* Style the tab */
+			div.tab {
+			    overflow: hidden;
+			    border: 1px solid #ccc;
+			    background-color: #f1f1f1;
+			}
+
+			/* Style the buttons inside the tab */
+			div.tab button {
+			    background-color: inherit;
+			    float: left;
+			    border: none;
+			    outline: none;
+			    cursor: pointer;
+			    padding: 14px 16px;
+			    transition: 0.3s;
+			}
+
+			/* Change background color of buttons on hover */
+			div.tab button:hover {
+			    background-color: #ddd;
+			}
+
+			/* Create an active/current tablink class */
+			div.tab button.active {
+			    background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+			    display: none;
+			    padding: 6px 12px;
+			    border: 1px solid #ccc;
+			    border-top: none;
+			}
+			input[type=text] {
+			    width: 130px;
+			    -webkit-transition: width 0.4s ease-in-out;
+			    transition: width 0.4s ease-in-out;
+			}
+
+			/* When the input field gets focus, change its width to 100% */
+			input[type=text]:focus {
+			    width: 100%;
+			}
+		</style>
+	  	<script>
+			function openCity(evt, cityName) {
+			    // Declare all variables
+			    var i, tabcontent, tablinks;
+
+			    // Get all elements with class="tabcontent" and hide them
+			    tabcontent = document.getElementsByClassName("tabcontent");
+			    for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			    }
+
+			    // Get all elements with class="tablinks" and remove the class "active"
+			    tablinks = document.getElementsByClassName("tablinks");
+			    for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			    }
+
+			    // Show the current tab, and add an "active" class to the button that opened the tab
+			    document.getElementById(cityName).style.display = "block";
+			    evt.currentTarget.className += " active";
+			}	
+			
+	  	</script>
+				
+	</head>
+
+</html>
+<body>
+		<div class="tab">
+  		<button class="tablinks" onclick="openCity(event, 'Dogs')">Dogs</button>
+  		<button class="tablinks" onclick="openCity(event, 'Cats')">Cats</button>
+ 		<button class="tablinks" onclick="openCity(event, 'Other Small Criters')">Other Small Criters</button>
+		</div>
+
+		<div id="Dogs" class="tabcontent">
+  		<h3>Dogs</h3>
+  		<p>Dogs are energetic, dependent, and are for people with lots off free time on their hands.</p>
+		</div>
+
+		<div id="Cats" class="tabcontent">
+  		<h3>Cats</h3>
+ 		<p>Cats are clean, independent, and are for people that don't have time to constantly look after a pet, but they can deal with situations with ease.</p> 
+		</div>
+
+		<div id="Other Small Criters" class="tabcontent">
+  		<h3>Other Small Criters</h3>
+  		<p>Depending on the animal....small and fury....or slick but slimy..different pets have different mandetory needs that you must be aware of when buying a pet.</p>
+		</div>	
+	
+	
+	
+		<input type="text" name="search" placeholder="Search..">
+   		</div>
+		</div>
+		<h6> (Use the search bar to find any location of facts about me on this page quickly.) <h6>
+		<h2> Melodie is my name and Rescue is my game! </h2>
+		<h1> When you rescue an animal...</h1>
+		<h2> Or adopt one...</h2>
+		<h3> Not only you...</h3>
+		<h4> But the animal too...</h4>
+		<h5> Will be happy...</h5>
+		<h6> And you will have a friend for life!</h6>
+		<p> This is my second website wich will contain information on how to help animals in need, and what <b>you</b> in general can do to help! <b>Welcome learners!</b> </p>
+		<a href="https://www.animaljam.com/game/play"> Jam It! </a>
+		<p> This is a fun free game that provides entertainment and minimal education on animals for yor child. </p>
+		<img src="http://cdn.kickvick.com/wp-content/uploads/2015/09/cutest-bunny-rabbits-18.jpg">
+
+		<h1> List:</h1>
+		<h2> -Make sure to educate yourself before adopting a pet. <br>
+			- rescues are always a good to adopt...but make sure you can serve any of their special needs before adoption.</h2>
+		<div class=pizza>Adopt a mut in need...</div>
+		<h5><i>Instead <i> of a purebred...</h5>
+		<div class=pizza>
+			<h4>because</h4>
+		Go to this link to hear the experts answer, or just read the short summary below:
+		 <div>
+		<ul>
+			<a href = "https://bestfriends.org/resources/adopt-pet-shelter-or-rescue"> Click ME for information about mutt adoption from the experts. <br></a>
+			 <li>First mutts are abandoned and have gone through great pain and stress, which means giving them a home means a lot.</li>
+			<li>Second when you adopt a rescue you are saving the animal from death, 5,500 animals are killed in U.S. shelters because they were never housed.</li>
+			
+		</ul>
+		</div>
+			<a href = "http:/www.green-hill.org"> Click ME for animal awarness and adoption from the experts. <br></a>
+			<img src = "https://i.pinimg.com/736x/3e/f2/8d/3ef28d0262a5f4220e6e1c651b60f01c--hacks-your-pet.jpg">
+		<img src= "https://i.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf--cute-hamsters-dwarf-hamsters.jpg">
+			<img src = "https://img.thrfun.com/img/002/065/labrador_retriever_puppy_l.jpg">
+			<img src = "https://pbs.twimg.com/media/C3Hd3PpXcAArFne.jpg:large">
+			<img src= "https://metrouk2.files.wordpress.com/2017/07/187144066.jpg?w=748&h=498&crop=1">
+			<img src = "http://i.dailymail.co.uk/i/pix/2014/02/18/article-0-1B9ABBD800000578-198_306x443.jpg">
+		<div>
+		<h3>This is the best day....<br> To adopt a friend for life!</h3> 
+					
+							
+							<marquee> Try not to adopt purebreeds! </marquee> <br>
+		<marquee> Adopt Rescues in need! </marquee>
+								
+						
+									
+		<ul>
+			<li><a href= "test3.html">Click me to go to my third website, and learn more about me!</a></li>
+			<li><a href= "https://www.petco.com/shop/en/petcostore/new-pet">More information from the experts. </a></li>
+			<h5> Helpers:</h5>
+			<li> Julian </li>
+			<li> Jorge </li>
+			<li> Sarah </li>
+			
+		</ul>
+		</div>
+	</body>
+</html>
+
 
