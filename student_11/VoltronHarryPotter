@@ -1,0 +1,24 @@
+< ! DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+<header> 
+<a href="/"> 
+<img scr= logo.png> 
+</a>
+
+<h4> VOLTRON AND HARRY POTTER FANPAGE </h4> 
+</header>
+<nav>
+<ul>
+<li> Home </li>
+<li> About Us </li> 
+<li> Gallery </li> 
+<li> Contact Us </li> 
+</ul>
+</nav> 
+</body>
+
+</html>
