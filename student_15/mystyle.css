@@ -4,5 +4,6 @@ header h1 {
 }
 
 nav ul {
-
+clear: both;
 }
+nav li{
