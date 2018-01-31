@@ -5,7 +5,7 @@ header h1{
 }
 
 
-//make bullets disappear/ put word in line:
+
 nav ul{
   clear: both;
 }
@@ -15,7 +15,7 @@ nav li{
   padding-left: 40px;
 }
 
-//gets rid of underline under links
+
 a:link{
   text-decoration: none;
 }
