@@ -1,1 +1,20 @@
+header h1
+font-family
+marin-left:
 
+
+
+
+nav ul{
+clear: both;
+}
+nav li{
+  list-style-type: none;
+  display: inline;
+  padding-left: 67px
+}
+
+
+a:link{
+  text-decoration: none;
+{
