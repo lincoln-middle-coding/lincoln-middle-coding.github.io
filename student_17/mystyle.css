@@ -1,7 +1,7 @@
-//.gallerycontainer{
-//    display:'flex';
-//    flex-direction: 'row';
-//}
+.gallerycontainer{
+    display:'flex';
+    flex-direction: 'row';
+}
 
 header h1{
     font-family: sans-serif;
@@ -65,7 +65,7 @@ div.gallery:hover {
 
 div.gallery img {
     width: 100%;
-    height: auto;
+    height: 50%;
 }
 
 div.desc {
