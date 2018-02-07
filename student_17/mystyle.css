@@ -1,3 +1,8 @@
+.gallerycontainer{
+    display:'flex';
+    flex-direction: 'row';
+}
+
 header h1{
     font-family: sans-serif;
     margin-left: 10px;
