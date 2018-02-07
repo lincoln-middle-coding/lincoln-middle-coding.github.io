@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1:hover {
+    color: red;
+     font-style: bold;
+    
+    }
+  
+  </style>
+  <title> Legend Box Builds </title>
+  </head>
+  <body>
+  <h1> Welcome to Legend Box Builds! </h1>
+  <img src = "https://img00.deviantart.net/066a/i/2012/147/0/1/cardboard_something_sword_i_dunno_lolz_by_makeshitoholic-d51ajhz.jpg">
+<p> We create awesome and amazing figures and objects out of cardboard! Whether you want it colored <br> or not, moving or not, we will find a way to make it!</p>
+<img src = "https://i.ytimg.com/vi/Mb2AwIXrF5U/hqdefault.jpg">
+<p> If you want to have something made please email us at legendboxbuilds@gmail.com <br> Tell us what you want to have made and how you want it to be made. We will respond with the price of the build <br> We would like you to send us the money before we start. <br> Keep in mind that we guarentee customer saisfaction!<br> If you aren't satisfied we will send the money back in exchange for the build.<br> If you send the build broken, we will charge extra. </p>
+
+</body>
+</html>
