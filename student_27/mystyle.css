@@ -7,6 +7,8 @@
 }
 nav ul{
  clear: both;
+ display: block;
+ margin:auto;
 }
 
 nav li{
