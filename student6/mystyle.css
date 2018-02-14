@@ -1,3 +1,8 @@
+body{
+ display:block;
+  margin:auto; 
+}
+
 nav ul{
   clear: both;
 }
