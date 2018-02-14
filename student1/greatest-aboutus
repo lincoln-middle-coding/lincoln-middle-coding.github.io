@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Greatest</title> 
+  </head>
+  <body>
+    <header>
+      <img src="https://github.com/lincoln-middle-coding/lincoln-middle-coding.github.io/blob/master/student1/export%20(1).png?raw=true" />      
+      <h3>About Us</h3>
+    </header>
+    <p>The Greatest is a website founded by Abel Pereira in January of 2018. The purpose of this website is to inform the public of the current news and headlines of each week. The thing that sets the Greatest apart from other news websites is that we focus on positive news articles, hoping to leave our readers with a sense of happiness instead of worry. Any feedback on our website is greatly appreciated, just use the "Contact Us" page. To view our news articles, visit the "Gallery" page. Thank you for taking your time to visit our magical website.</p>
+    <nav>
+      <ul>
+        <li><a href="https://lincoln-middle-coding.github.io/student1/greatest.html">Home</a></li>
+        <li><a href="https://lincoln-middle-coding.github.io/student1/greatest-aboutus.html">About Us</li>
+        <li><a href="https://lincoln-middle-coding.github.io/student1/greatest-gallery.html">Gallery</li>
+        <li><a href="https://lincoln-middle-coding.github.io/student1/greatest-contactus.html">Contact Us</li>
+      </ul>
+    </nav>
+  </body>
+</html>
