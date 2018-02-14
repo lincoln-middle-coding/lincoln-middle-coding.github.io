@@ -1,3 +1,6 @@
 nav ul{
   clear: both;
 }
+nav li{
+text-align: center;
+}
