@@ -25,11 +25,13 @@ nav li{
  a:link{
  text-decoration:none;
 }
+
 div.gallery {
+   display:block;
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 180px;
+ width:100%;
 }
 
 div.gallery:hover {
