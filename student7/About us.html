@@ -1,1 +1,21 @@
-
+<DOCTYPE>
+  <html lang="en">
+    #animation{
+    width: 600px;
+    height:50px;
+    backround: red;
+    position: relativee;
+    -webkit-animation: myfirst 15s;
+    -webkit-animation-iteration-count: infinite/5;
+    animation: my first 15s;
+}
+    
+    @-webkit-keyframes myfirst{
+    0% {background:red; left:0px; top:0px;}
+    25% {background:purple; left:200px; top:0px;}
+    50% {background:yellow; left:200px; top:100px;}
+    75% {background:blue; left:0px; top:100px;}
+    100% {background:red; left:0px; top:0px;}
+}
+    
+    <div id="animation"> Watch me move!</div>
