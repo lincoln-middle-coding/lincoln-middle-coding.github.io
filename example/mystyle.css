@@ -40,3 +40,8 @@ a:link{
   clear: both;
 }
 
+Ceneterer{
+  display:block;
+  margin:auto;
+  font-size:2em;
+}
